@@ -1,0 +1,35 @@
+:root {
+    --purple: #AA96DA;
+    --mint: #C5FAD5;
+    --butter: #FFFFD2;
+}
+/* Selecting all backgroud color to --mint*/
+* {
+    background-color: var(--mint);
+}
+
+
+/* style changed to everything that is in the header tag*/
+header {
+    
+}
+
+.container {
+    display: flex;
+    background-color: var(--purple);
+    
+}
+
+.title {
+    height: 100px;
+}
+
+nav {
+    text-align: right;
+    justify-content: right;
+}
+
+ul {
+    display: inline;
+    justify-content: right;
+}
