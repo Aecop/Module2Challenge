@@ -1,35 +1,101 @@
 :root {
-    --purple: #AA96DA;
-    --mint: #C5FAD5;
-    --butter: #FFFFD2;
-}
-/* Selecting all backgroud color to --mint*/
-* {
-    background-color: var(--mint);
+    /* Color */
+    --blue: #7689de;
+    --white: #FFFFFF;
+    --powderblue: #a9dce3;
+    
+    /* Font */
+    --mono: monospace;
 }
 
+
+
+/* Body tag style */
+body {
+    background-color: var(--white);
+}
 
 /* style changed to everything that is in the header tag*/
-header {
-    
+
+.box1 {
+    height: 15px;
+    width: 100%;
+    background: var(--blue);
+}
+.box2 {
+    position: absolute;
+    top: 130px;
+    height: 15px;
+    width: 100%;
+    background-color: var(--blue);
 }
 
+/* Header style */
 .container {
-    display: flex;
-    background-color: var(--purple);
+    width: 100%;
+    height: 120px;
+}
+
+
+h1 {
+    font-size: xx-large;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    font-family: var(--mono);
+    font-weight:bold;
+    color: var(--blue)
     
 }
 
-.title {
-    height: 100px;
+
+header {
+    background-color: var(--powderblue);
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    flex-wrap:wrap;
+    
+    
 }
 
 nav {
-    text-align: right;
+    display: inline;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: right;
+    justify-content:space-between
+    
+   
 }
 
-ul {
-    display: inline;
-    justify-content: right;
+ul { 
+    display: flex;
+    font-size: large;
+    position: absolute;
+    top : 45px;
+    right: 20px;
+    
+}
+
+li {
+    display: inline-block;
+    margin: 15px;
+    font-family: var(--mono);
+    font-weight: bold;
+    
+}
+
+/* Change color of <a> tag for the nav */
+a:link {
+    color: var(--blue);
+    text-decoration: none;
+}
+a:after {
+    color: var(--blue);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--blue);
+    text-decoration: none;
 }
