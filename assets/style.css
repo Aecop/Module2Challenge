@@ -16,6 +16,7 @@ html {
 /* Body tag style */
 body {
     background-color: var(--white);
+    font-family: sans-serif;
 }
 
 /* style changed to everything that is in the header tag*/
@@ -45,7 +46,7 @@ h1 {
     position: absolute;
     left: 40px;
     top: 50px;
-    font-family: var(--mono);
+    font-family: sans-serif;
     font-weight:bold;
     color: var(--blue)
     
@@ -84,9 +85,16 @@ ul {
 li {
     display: inline-block;
     margin: 15px;
-    font-family: var(--mono);
     font-weight: bold;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
     
+}
+
+li:hover {
+    
+    opacity: .5;
+    transform: scale(1.2)
 }
 
 /* Change color of <a> tag for the nav */
@@ -111,35 +119,28 @@ a:visited {
     padding: 5%;
     
 }
-/* #seattle {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height:120%;
-    object-fit:cover;
-    
-    
-} */
 
 
 h2 {
     display: block;
     text-align:center;
     font-size: xx-large;
-    font-family: var(--mono);
+   
     color: var(--blue);
 
 }
 
 p {
     color: var(--blue);
-    font-family: var(--mono);
+    
     animation-duration: 3s;
     animation-name:slideto;
     margin: 2%;
     line-height: 35px;
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 /* Animation for p tag */
 @keyframes slideto {
@@ -157,22 +158,52 @@ p {
 main {
     background-color: var(--powderblue);
     display: flex;
-    justify-content: center;
+    height: 100%;
+    width: 100%;
+    justify-content:space-between;
 }
 
 .langbox {
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 5%;
+    gap: 2rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    
     
 }
 
 img {
     display: flex;
-    flex-wrap: wrap;
-    height: 140px;
-    width: 150px;
-    border: 1px solid black;
+    height: 200px;
+    width: 350px;
+    border: 10px solid var(--blue);
     object-fit:fill;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+    
     
 }
+
+img:hover {
+    background-color: var(--blue);
+    opacity: .5;
+    transform: scale(1.1)
+}
+
+.projectclass {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20%;
     
+}
+
+
+@media screen and (max-width: 980px) {
+    p {
+        padding: 0%
+    }
+}
