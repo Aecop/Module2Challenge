@@ -18,6 +18,7 @@ No install is required nor run.
 https://aecop.github.io/Module2Challenge/
 
 ## Screenshot
-I will upload screenshot once screenshot is working on my laptop!
+
+<img width="1792" alt="Screen Shot 2022-11-03 at 9 17 30 PM" src="https://user-images.githubusercontent.com/99924972/199886436-6b09cf15-53e2-4dd6-b189-290383b2557b.png">
 
 
